@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First JavaScript</h1>
+<p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<script>
+    function light(sw) {
+      var pic;
+      if (sw == 0) {
+        pic = "shark_2.png"
+      } else {
+        pic = "shark.png"
+      }
+      document.getElementById('myImage').src = pic;
+    }
+    </script>
+
+    <style>
+      #on { background-color: green;
+          width: 100px;
+            height:40px;
+      }
+      
+      #off { background-color: red;
+            width: 100px;
+            height:40px;
+      }
+</style>
+
+    <img id="myImage" src="shark.png" width="180" height="180">
+    <p>
+    <button id ="on" type="button" onclick="light(1)"> Shark </button>
+    <button id ="off" type="button" onclick="light(0)"> Fish </button>
+    </p>
+
+      <br> <br>
+      <h1>HTML Exercise</h1>
+    <form>
+        <!-- Login -->
+        <fieldset>
+            <legend> Login* </legend> 
+            <label for="uname">Username*</label>
+            <br>
+            <input type="text">
+            <br>
+            <label for="pword">Password*</label>
+            <br>
+            <input type="text">
+        </fieldset>
+
+        <!-- Radio -->
+        <fieldset>
+            <legend> Gender* </legend>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female"> Female </label>
+            
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male"> Male </label>
+        </fieldset>
+
+        <!-- CheckBox -->
+        <fieldset>
+            <legend> Programming Skill </legend>
+            <input type="checkbox" id="java" name="lang1" value="java">
+            <label for="java"> Java </label>
+
+            <input type="checkbox" id="cplus" name="lang2" value="cplus" checked>
+            <label for="cplus"> C++ </label>
+
+            <input type="checkbox" id="cshap" name="lang3" value="cshap">
+            <label for="cshap"> C# </label>
+        </fieldset>
+
+        <!-- Options -->
+        <fieldset>
+            <legend> Fruit </legend>
+            <label for="cplus"> Choose a fruit: </label>
+            <select name="fruit" id="fruit">
+                <option value="banana">Banana</option>
+                <option value="apple">Apple</option>
+                <option value="pear">Pear</option>
+                <option value="strawb">Strawberry </option>
+                <option value="orange">Orange</option>
+            </select>
+        </fieldset>
+
+        <!-- TextBox -->
+        <fieldset>
+            <!--<input type="text" name="textbox" id="textbox" placeholder="Enter your comment here" style="height:100px; width:300px; text-align: justify;">  -->
+            <textarea name="textArea" placeholder="Enter your comment here" id="" cols="30" rows="5" maxlength="100"> </textarea>
+        </fieldset>
+
+        <!-- SubmitButton -->
+        <input type="submit" value="SEND">
+        <input type="reset" value="RESET">
+
+    </form> <!--end of form-->
+    <br> 
+    <br>
+
+  </body>
+</html> 
